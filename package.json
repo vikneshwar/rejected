@@ -1,0 +1,19 @@
+{
+  "name": "rejected.me",
+  "version": "0.0.1",
+  "description": "Stories of people proposals rejected by their GF/BF",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vikneshwar",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "winston": "^2.1.1"
+  }
+}
