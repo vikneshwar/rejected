@@ -37,7 +37,7 @@ app.use(function (err, req, res, next) {//jshint ignore:line
         error: err.message
     });
 });
-var port = process.env.PORT || 8090
+var port = process.env.PORT || 8091
 app.listen(port, function() {
     logger.info('Express server listening on: '+port);
 });
