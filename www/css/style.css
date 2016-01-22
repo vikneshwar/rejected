@@ -1,0 +1,11 @@
+#form {
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 5%;
+	z-index: 10;
+	background-color: white;
+}
+body {
+	background-color: #1de9b6;
+	z-index: 1;
+}

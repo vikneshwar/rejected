@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" type="text/css" href="../css/default.css" />
+	<link rel="stylesheet" type="text/css" href="../css/component.css" />
+	<script src="../js/modernizr.custom.js"></script>
+	<style type="text/css">
+		.container li:hover {
+      		cursor: pointer; 
+  		}
+  		.container li card-back {
+  			background: #22cfda;
+  		}
+       .container li:hover .card-front {
+	        -webkit-transform: rotateX(180deg);
+	        -moz-transform: rotateX(180deg);
+	        -ms-transform: rotateX(180deg);
+	        -o-transform: rotateX(180deg);
+	        transform: rotateX(180deg);
+	        -webkit-transform: perspective(1000) rotateX(180deg);
+	        -moz-transform: perspective(1000) rotateX(180deg);
+	        -ms-transform: perspective(1000) rotateX(180deg);
+	        -o-transform: perspective(1000) rotateX(180deg);
+	        transform: perspective(1000) rotateX(180deg); 
+	   	}
+		.container li:hover .card-back {
+	        z-index: 950;
+	        -webkit-transform: rotateX(0deg);
+	        -moz-transform: rotateX(0deg);
+	        -ms-transform: rotateX(0deg);
+	        -o-transform: rotateX(0deg);
+	        transform: rotateX(0deg);
+	        -webkit-transform: perspective(1000) rotateX(0deg);
+	        -moz-transform: perspective(1000) rotateX(0deg);
+	        -ms-transform: perspective(1000) rotateX(0deg);
+	        -o-transform: perspective(1000) rotateX(0deg);
+	        transform: perspective(1000) rotateX(0deg); 
+	    }
+	   	.container .card-front,
+	   	.container .card-back {
+	   		text-align: right;
+	   		-webkit-backface-visibility: hidden;
+	   		-moz-backface-visibility: hidden;
+	   		-ms-backface-visibility: hidden;
+	   		-o-backface-visibility: hidden;
+	   		backface-visibility: hidden;
+	   		-webkit-transition: -webkit-transform 400ms;
+	   		-moz-transition: -moz-transform 400ms;
+	   		-o-transition: -o-transform 400ms;
+	   		transition: transform 400ms;
+	   		display: block;
+	   		height: 100%;
+	   		/*position: absolute;*/
+	   		width: 100%;
+
+
+	   	}
+
+	   	.container .card-front {
+	   		-webkit-transform: perspective(1000) rotateX(0);
+	   		-moz-transform: perspective(1000) rotateX(0);
+	   		-ms-transform: perspective(1000) rotateX(0);
+	   		-o-transform: perspective(1000) rotateX(0);
+	   		transform: perspective(1000) rotateX(0);
+	   		z-index: 900; 
+	   		/*position: relative;*/
+	   	}
+	   	.container .card-back {
+	   		-webkit-transform: rotateX(-180deg);
+	   		-moz-transform: rotateX(-180deg);
+	   		-ms-transform: rotateX(-180deg);
+	   		-o-transform: rotateX(-180deg);
+	   		transform: rotateX(-180deg);
+	   		z-index: 800; 
+	   		position: fixed;
+	   	}
+	   	.container li {
+	   		/*width: 100%;
+	   		height: 100%;*/
+	   		/*position: absolute;*/
+	   		position: relative;
+	   		float: left;
+	   		transform-style: preserve-3d;
+	   		transition: transform 1s;
+	   	}
+	   	.container {
+	   		width: 100%;
+	   		height: 100%;
+	   	}
+	</style>
+</head>
+<body>
+	<div class="container">
+
+		<ul class="grid effect-3" id="grid">
+			<li>
+				<div class="card-front">
+					<a href="http://drbl.in/fWMM">
+						<img src="../images/1.jpg">
+					</a>
+				</div>
+				<div class="card-back">
+					Lorem ipsum dolor sit amet, usu latine ancillae deterruisset no. Usu ea affert omnesque, te dictas principes vel. Nec et eros inimicus senserit, facilis interesset est ut. No his dico legere fabellas, has putant sadipscing ad. Vis vero accusamus liberavisse ei, velit veritus qui ne.
+				</div>
+			</li>
+			<li>
+				<div class="card-front">
+					<a href="http://drbl.in/fWMM">
+						<img src="../images/3.jpg">
+					</a>
+				</div>
+				<div class="card-back">
+					Lorem ipsum dolor sit amet, usu latine ancillae deterruisset no. Usu ea affert omnesque, te dictas principes vel. Nec et eros inimicus senserit, facilis interesset est ut. No his dico legere fabellas, has putant sadipscing ad. Vis vero accusamus liberavisse ei, velit veritus qui ne.
+				</div>
+			</li>
+			<li>
+				<div class="card-front">
+					<a href="http://drbl.in/fWMM">
+						<img src="../images/4.jpg">
+					</a>
+				</div>
+				<div class="card-back">
+					Lorem ipsum dolor sit amet, usu latine ancillae deterruisset no. Usu ea affert omnesque, te dictas principes vel. Nec et eros inimicus senserit, facilis interesset est ut. No his dico legere fabellas, has putant sadipscing ad. Vis vero accusamus liberavisse ei, velit veritus qui ne.
+				</div>
+			</li>
+			<li>
+				<div class="card-front">
+					<a href="http://drbl.in/fWMM">
+						<img src="../images/12.png">
+					</a>
+				</div>
+				<div class="card-back">
+					Lorem ipsum dolor sit amet, usu latine ancillae deterruisset no. Usu ea affert omnesque, te dictas principes vel. Nec et eros inimicus senserit, facilis interesset est ut. No his dico legere fabellas, has putant sadipscing ad. Vis vero accusamus liberavisse ei, velit veritus qui ne.
+				</div>
+			</li>
+			<li>
+				<div class="card-front">
+					<a href="http://drbl.in/fWMM">
+						<img src="../images/13.png">
+					</a>
+				</div>
+				<div class="card-back">
+					Lorem ipsum dolor sit amet, usu latine ancillae deterruisset no. Usu ea affert omnesque, te dictas principes vel. Nec et eros inimicus senserit, facilis interesset est ut. No his dico legere fabellas, has putant sadipscing ad. Vis vero accusamus liberavisse ei, velit veritus qui ne.
+				</div>
+			</li>
+
+			<li><a href="http://drbl.in/gXMo"><img src="../images/10.png"></a></li>
+			<li><a href="http://drbl.in/gXMn"><img src="../images/9.jpg"></a></li>
+			<li><a href="http://drbl.in/fzYo"><img src="../images/2.jpg"></a></li>
+			<li><a href="http://drbl.in/fARU"><img src="../images/14.png"></a></li>
+			<li><a href="http://drbl.in/fGhI"><img src="../images/5.jpg"></a></li>
+			<li><a href="http://drbl.in/fKCf"><img src="../images/6.jpg"></a></li>
+			<li><a href="http://drbl.in/fLBG"><img src="../images/7.jpg"></a></li>
+			<li><a href="http://drbl.in/fPEY"><img src="../images/8.jpg"></a></li>
+			<li><a href="http://drbl.in/fWwG"><img src="../images/9.jpg"></a></li>
+			<li><a href="http://drbl.in/fQdt"><img src="../images/12.png"></a></li>
+			<li><a href="http://drbl.in/fHaa"><img src="../images/13.png"></a></li>
+			<li><a href="http://drbl.in/gXMo"><img src="../images/10.png"></a></li>
+			<li><a href="http://drbl.in/gXMn"><img src="../images/11.png"></a></li>
+			<li><a href="http://drbl.in/fzYo"><img src="../images/2.jpg"></a></li>
+			<li><a href="http://drbl.in/fARU"><img src="../images/14.png"></a></li>
+			<li><a href="http://drbl.in/fWMM"><img src="../images/1.jpg"></a></li>
+			<li><a href="http://drbl.in/fWPV"><img src="../images/3.jpg"></a></li>
+			<li><a href="http://drbl.in/fWMT"><img src="../images/4.jpg"></a></li>
+			<li><a href="http://drbl.in/fGhI"><img src="../images/5.jpg"></a></li>
+			<li><a href="http://drbl.in/fKCf"><img src="../images/6.jpg"></a></li>
+			<li><a href="http://drbl.in/fLBG"><img src="../images/7.jpg"></a></li>
+			<li><a href="http://drbl.in/fPEY"><img src="../images/8.jpg"></a></li>
+			<li><a href="http://drbl.in/fWwG"><img src="../images/9.jpg"></a></li>
+			<li><a href="http://drbl.in/fQdt"><img src="../images/12.png"></a></li>
+			<li><a href="http://drbl.in/fHaa"><img src="../images/13.png"></a></li>
+			<li><a href="http://drbl.in/gXMo"><img src="../images/10.png"></a></li>
+			<li><a href="http://drbl.in/gXMn"><img src="../images/11.png"></a></li>
+			<li><a href="http://drbl.in/fzYo"><img src="../images/2.jpg"></a></li>
+			<li><a href="http://drbl.in/fARU"><img src="../images/14.png"></a></li>
+			<li><a href="http://drbl.in/fWMM"><img src="../images/1.jpg"></a></li>
+			<li><a href="http://drbl.in/fWPV"><img src="../images/3.jpg"></a></li>
+			<li><a href="http://drbl.in/fWMT"><img src="../images/4.jpg"></a></li>
+			<li><a href="http://drbl.in/fGhI"><img src="../images/5.jpg"></a></li>
+			<li><a href="http://drbl.in/fKCf"><img src="../images/6.jpg"></a></li>
+			<li><a href="http://drbl.in/fLBG"><img src="../images/7.jpg"></a></li>
+			<li><a href="http://drbl.in/fPEY"><img src="../images/8.jpg"></a></li>
+			<li><a href="http://drbl.in/fWwG"><img src="../images/9.jpg"></a></li>
+			<li><a href="http://drbl.in/fQdt"><img src="../images/12.png"></a></li>
+			<li><a href="http://drbl.in/fHaa"><img src="../images/13.png"></a></li>
+			<li><a href="http://drbl.in/gXMo"><img src="../images/10.png"></a></li>
+			<li><a href="http://drbl.in/gXMn"><img src="../images/11.png"></a></li>
+			<li><a href="http://drbl.in/fzYo"><img src="../images/2.jpg"></a></li>
+			<li><a href="http://drbl.in/fARU"><img src="../images/14.png"></a></li>
+			<li><a href="http://drbl.in/fWMM"><img src="../images/1.jpg"></a></li>
+			<li><a href="http://drbl.in/fWPV"><img src="../images/3.jpg"></a></li>
+			<li><a href="http://drbl.in/fWMT"><img src="../images/4.jpg"></a></li>
+			<li><a href="http://drbl.in/fGhI"><img src="../images/5.jpg"></a></li>
+			<li><a href="http://drbl.in/fKCf"><img src="../images/6.jpg"></a></li>
+			<li><a href="http://drbl.in/fLBG"><img src="../images/7.jpg"></a></li>
+			<li><a href="http://drbl.in/fPEY"><img src="../images/8.jpg"></a></li>
+			<li><a href="http://drbl.in/fWwG"><img src="../images/9.jpg"></a></li>
+			<li><a href="http://drbl.in/fQdt"><img src="../images/12.png"></a></li>
+			<li><a href="http://drbl.in/fHaa"><img src="../images/13.png"></a></li>
+			<li><a href="http://drbl.in/gXMo"><img src="../images/10.png"></a></li>
+			<li><a href="http://drbl.in/gXMn"><img src="../images/11.png"></a></li>
+			<li><a href="http://drbl.in/fzYo"><img src="../images/2.jpg"></a></li>
+			<li><a href="http://drbl.in/fARU"><img src="../images/14.png"></a></li>
+			<li><a href="http://drbl.in/fWMM"><img src="../images/1.jpg"></a></li>
+			<li><a href="http://drbl.in/fWPV"><img src="../images/3.jpg"></a></li>
+			<li><a href="http://drbl.in/fWMT"><img src="../images/4.jpg"></a></li>
+			<li><a href="http://drbl.in/fGhI"><img src="../images/5.jpg"></a></li>
+			<li><a href="http://drbl.in/fKCf"><img src="../images/6.jpg"></a></li>
+			<li><a href="http://drbl.in/fLBG"><img src="../images/7.jpg"></a></li>
+			<li><a href="http://drbl.in/fPEY"><img src="../images/8.jpg"></a></li>
+			<li><a href="http://drbl.in/fWwG"><img src="../images/9.jpg"></a></li>
+			<li><a href="http://drbl.in/fQdt"><img src="../images/12.png"></a></li>
+			<li><a href="http://drbl.in/fHaa"><img src="../images/13.png"></a></li>
+			<li><a href="http://drbl.in/gXMo"><img src="../images/10.png"></a></li>
+			<li><a href="http://drbl.in/gXMn"><img src="../images/11.png"></a></li>
+			<li><a href="http://drbl.in/fzYo"><img src="../images/2.jpg"></a></li>
+			<li><a href="http://drbl.in/fARU"><img src="../images/14.png"></a></li>
+			<li><a href="http://drbl.in/fWMM"><img src="../images/1.jpg"></a></li>
+			<li><a href="http://drbl.in/fWPV"><img src="../images/3.jpg"></a></li>
+			<li><a href="http://drbl.in/fWMT"><img src="../images/4.jpg"></a></li>
+			<li><a href="http://drbl.in/fGhI"><img src="../images/5.jpg"></a></li>
+			<li><a href="http://drbl.in/fKCf"><img src="../images/6.jpg"></a></li>
+			<li><a href="http://drbl.in/fLBG"><img src="../images/7.jpg"></a></li>
+			<li><a href="http://drbl.in/fPEY"><img src="../images/8.jpg"></a></li>
+			<li><a href="http://drbl.in/fWwG"><img src="../images/9.jpg"></a></li>
+			<li><a href="http://drbl.in/fWPV"><img src="../images/3.jpg"></a></li>
+			<li><a href="http://drbl.in/fGhI"><img src="../images/5.jpg"></a></li>
+			<li><a href="http://drbl.in/fzYo"><img src="../images/2.jpg"></a></li>
+		</ul>
+	</div>
+	<script src="../js/masonry.pkgd.min.js"></script>
+	<script src="../js/imagesloaded.js"></script>
+	<script src="../js/classie.js"></script>
+	<script src="../js/AnimOnScroll.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+
+	<script>
+		new AnimOnScroll( document.getElementById( 'grid' ), {
+			minDuration : 0.4,
+			maxDuration : 0.7,
+			viewportFactor : 0.2
+		} );
+		/*$(".card-front").each(function(){
+			var offset = $(this).offset();
+			var back = $(this).siblings(".card-back");
+			$(back[0]).css('top',offset.top);
+			$(back[0]).css('left',offset.left);
+		});*/
+var bgColor;
+var effect = 'animated bounceInLeft'; /* bounceIn, bounceInUp, bounceInDown, bounceInLeft,
+										 bounceInRight, rotateIn, rotateInUpLeft, rotateInDownLeft,
+										 rotateInUpRight, rotateInDownRight  */
+/*
+$('.container li').click(function(){
+	$('.card-front, .card-back').hide();
+	$('.container li').removeClass('active').hide().css('border','none');
+	$(this).addClass('active').show();
+	bgColor = $('.active .card-back').css('background-color');
+	$('.container').css('background-color',bgColor);
+	$('.close, .all-content').show();
+	$('.responsive').append('<span class="close">close</span>').addClass(effect);
+});
+
+
+$('.container').on('click', '.close', function(){
+
+	$('.close').remove();
+	bgColor = $('.active .card-front').css('background-color');
+	$('.responsive').removeClass(effect);
+	$('.all-content').hide();
+	$('.container li').removeClass('active').show().css({ 'border-bottom':'1px solid #2c2c2c',
+													    'border-left':'1px solid #2c2c2c' });
+	$('.card-front, .card-back').show();
+	$('.container').css('background-color',bgColor);
+});
+*/
+	</script>
+</body>
+</html>
